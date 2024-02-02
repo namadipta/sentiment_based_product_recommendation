@@ -1,4 +1,3 @@
-#from cgitb import text
 from flask import Flask,render_template,request
 import model 
 app = Flask('__name__')
@@ -16,7 +15,6 @@ def recommend_top5():
     
     if  user_name in valid_userid and request.method == 'POST':
             top20_products = model.recommend_products(user_name)
-            print(top20_products.head())
             get_top5 = model.top5_products(top20_products)
             return render_template('index.html',column_names=get_top5.columns.values, row_data=list(get_top5.values.tolist()), zip=zip,text='Recommended products')
     elif not user_name in  valid_userid:

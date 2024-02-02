@@ -1,5 +1,3 @@
-Demo URL : 
-
 # Problem Statement
 In e-commerce business we do not need to take orders by going to each customer. A company launches its website to sell the items to the end consumer, and customers can order the products that they require from the same website. Some of the major Ecommerce providers are  Amazon, Flipkart, Myntra, Paytm and Snapdeal.
 
